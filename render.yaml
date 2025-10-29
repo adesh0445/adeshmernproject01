@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mernproject01
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        value: "your_mongodb_connection_string"
+      - key: FRONTEND_URL
+        value: "https://mernproject01.onrender.com"
