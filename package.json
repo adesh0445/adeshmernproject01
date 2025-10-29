@@ -2,14 +2,15 @@
   "name": "adeshmernproject01",
   "version": "1.0.0",
   "scripts": {
+    "postinstall": "cd server && npm install",
     "build": "cd client && npm install && npm run build",
     "start": "node server/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "mongoose": "^8.19.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0",
     "path": "^0.12.7"
   },
   "engines": {
